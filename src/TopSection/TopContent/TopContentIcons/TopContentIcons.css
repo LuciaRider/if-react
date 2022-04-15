@@ -1,0 +1,15 @@
+.top-section_bottom-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.google-play {
+    height: 40px;
+    width: 135px;
+    margin-right: 15px;
+}
+
+.app-store {
+    height: 40px;
+    width: 120px;
+}

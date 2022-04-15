@@ -1,0 +1,126 @@
+.children {
+    position: relative;
+    width: 25%;
+    border-radius: 8px;
+}
+
+.children_wrapper {
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 21px 26px;
+    font-size: 18px;
+    color: #383838;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.children_wrapper:focus {
+    border: 3px solid #F5BD41;
+    position: relative;
+}
+
+.dash {
+    width: 12px;
+    border: 1px solid #383838;
+}
+
+.filter_wrapper {
+    visibility: hidden;
+    opacity: 0;
+    width: 259px;
+    background-color: #FFFFFF;
+    color: #333333;
+    position: absolute;
+    top: 76px;
+    right: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 4px gray;
+}
+
+.filter_content {
+    padding: 22px;
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .filter_content {
+        color: #333333;
+    }
+}
+
+.filter_adults {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.filter_text {
+    font-size: 16px;
+}
+
+.filter_plus-minus {
+    display: flex;
+    align-items: center;
+}
+
+.minus {
+    border: 1px solid #CECECE;
+    color: #CECECE;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter_number {
+    margin: 0 19px;
+    font-size: 16px;
+    width: 19px;
+    text-align: center;
+}
+
+.plus {
+    border: 1px solid #3077C6;
+    color: #3077C6;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter_children {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .filter_children {
+        margin-bottom: 0px;
+    }
+}
+
+.filter_rooms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child_age {
+    font-size: 12px;
+    margin-top: 28px;
+    display: none;
+}
+
