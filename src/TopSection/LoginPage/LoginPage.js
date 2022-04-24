@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import TopHeader from '../TopHeader/TopHeader';
 import Button from '../../Components/Button/Button';
 import TopSection from '../../TopSection/TopSection';
-
 import './LoginPage.css';
 
-function LoginForm() {
+function LoginPage({setSearchValue}) {
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -54,12 +53,12 @@ function LoginForm() {
                 <form onSubmit={handleSubmit}>
                   <p className="sign-in_title">Sign in</p>
                   <div className="sign-in_inputs">
-                    <label className="sign-in_label" for="sign-in-input">Email address </label>
+                    <label className="sign-in_label" htmlFor="sign-in-input">Email address </label>
                     <input className="sign-in_input" type="text" name="mail" required />
                     {renderErrorMessage("mail")}
                   </div>
                   <div className="sign-in_inputs">
-                    <label className="sign-in_label" for="sign-in-input">Password </label>
+                    <label className="sign-in_label" htmlFor="sign-in-input">Password </label>
                     <input className="sign-in_input" type="password" name="pass" required />
                     {renderErrorMessage("pass")}
                   </div>
@@ -72,17 +71,11 @@ function LoginForm() {
     </header>
   );
 
-
-  const accountIcon = document.getElementsByClassName('.account')[0];
-  console.log(accountIcon)
-
   return (
     <> 
-      {isSubmitted ? <TopSection/> : renderForm}
-      {/* {isSubmitted ? (<TopSection/>, accountIcon.classList.toggle('.account-yellow')) : renderForm} */}
-      {/* {isSubmitted ? <TopSection/> && accountIcon.classList.toggle('.account-yellow') : renderForm} */}
+      {isSubmitted ? <TopSection setSearchValue={setSearchValue}/> : renderForm}
     </> 
   );
 }
 
-export default LoginForm;
+export default LoginPage;

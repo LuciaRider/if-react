@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <footer>
-            <div class="footer_container">
+            <div className="footer_container">
                 <a href="#">
                     <svg className="logo_footer" id="logo" viewBox="0 0 205 40">
                         <g>

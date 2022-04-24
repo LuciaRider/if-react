@@ -1,0 +1,22 @@
+.hotel_container {
+    padding: 120px 16px;
+    margin: 0 auto;
+}
+
+.hotel_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel_img {
+    height: 300px;
+}
+
+.btn_homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
