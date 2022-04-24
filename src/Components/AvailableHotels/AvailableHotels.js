@@ -5,7 +5,6 @@ function App() {
     
     return (
       <main>
-        {/* <button onClick={() => showAvailable(true)}>{isShowAvailable?1:0}</button> */}
         <button onClick={() => showAvailable(true)}>Включить</button>
         <div>{isShowAvailable && 'текст'}</div>
       </main>
