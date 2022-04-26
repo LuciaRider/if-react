@@ -1,6 +1,23 @@
+.hotelCard_background {
+    background-color: #EAF0F9;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+}
+
+.hotelCard_header {
+    padding: 50px 105px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .hotel_container {
     padding: 120px 16px;
     margin: 0 auto;
+    padding-top: 0;
 }
 
 .hotel_card {
@@ -14,9 +31,19 @@
     height: 300px;
 }
 
+.hotelCard_name {
+    color: #3077C6;
+    margin: 25px 0;
+    max-width: 296px;
+}
+
+.hotelCard_location {
+    color: #BFBFBF;
+    max-width: 296px;
+}
+
 .btn_homepage {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    padding-top: 30px;
 }

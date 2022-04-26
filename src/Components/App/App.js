@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AvailableHotels from '../../AvailableHotels/AvailableHotels';
 import HotelPage from '../../AvailableHotels/HotelPage/HotelPage';
@@ -12,7 +12,7 @@ function App() {
   const [searchValue, setSearchValue] = useState([]);
 
   return (
-    <Router>
+    <BrowserRouter>
       <>
         <LoginPage setSearchValue={setSearchValue}/>
           <main>
@@ -24,7 +24,7 @@ function App() {
           </main>
         <Footer/>
       </>
-    </Router>
+    </BrowserRouter>
   );
 
 };

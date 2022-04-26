@@ -1,11 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AvailableHotels.css';
-import SectionTitle from '../Components/SectionTitle/SectionTitle';
-import HotelPage from '../AvailableHotels/HotelPage/HotelPage';
-import Button from '../Components/Button/Button';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
+import './AvailableHotels.css';
 import 'swiper/css'
 
 const url = 'https://fe-student-api.herokuapp.com/api/hotels';
@@ -64,17 +62,17 @@ function AvailableHotels (props) {
                     >
                         { searchValue.length?
                         searchValue.map((hotelData, index) =>
-                            //   <HotelPage  key={element.id} id={element.id} item={element}/>
-                            // Link to = /hotels/${hotelData.id}
-                            <SwiperSlide key={index}>
-                                    <div className="content_img">
-                                        <div class="image_wrapper">
-                                            <img src={hotelData.imageUrl} alt={hotelData.name}/>
-                                        </div>
-                                        <p className="accent_blue">{hotelData.name}</p>
-                                        <p className="secondary">{hotelData.city}, {hotelData.country}</p>
-                                    </div>
-                            </SwiperSlide>
+                                    <SwiperSlide key={index}>
+                                        <Link to={`/hotels/${hotelData.id}`} className="available_card">
+                                                <div className="content_img">
+                                                    <div class="image_wrapper">
+                                                        <img src={hotelData.imageUrl} alt={hotelData.name}/>
+                                                    </div>
+                                                    <p className="accent_blue">{hotelData.name}</p>
+                                                    <p className="secondary">{hotelData.city}, {hotelData.country}</p>
+                                                </div>
+                                        </Link>
+                                    </SwiperSlide>
                       ) :             
                         <div>
                             <p className="hotel-no-found">The hotel was not found</p>
