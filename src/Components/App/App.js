@@ -11,21 +11,30 @@ function App() {
 
   const [searchValue, setSearchValue] = useState([]);
 
+  // return (
+  //   <BrowserRouter>
+  //     <>
+  //       <LoginPage setSearchValue={setSearchValue}/>
+  //         <main>
+  //           <Routes>
+  //             <Route path='/hotels' element={<AvailableHotels searchValue={searchValue}/>}/>
+  //             <Route path='/hotels/:id' element={<HotelPage/>}/>
+  //           </Routes>
+  //           <HomesSection/>
+  //         </main>
+  //       <Footer/>
+  //     </>
+  //   </BrowserRouter>
+  // );
+
   return (
-    <BrowserRouter>
-      <>
-        <LoginPage setSearchValue={setSearchValue}/>
-          <main>
-            <Routes>
-              <Route path='/hotels' element={<AvailableHotels searchValue={searchValue}/>}/>
-              <Route path='/hotels/:id' element={<HotelPage/>}/>
-            </Routes>
-            <HomesSection/>
-          </main>
-        <Footer/>
-      </>
-    </BrowserRouter>
-  );
+    <>
+      <LoginPage setSearchValue={setSearchValue}/>
+      <AvailableHotels searchValue={searchValue}/>
+      <HomesSection/>
+      <Footer/>
+    </>
+  )
 
 };
 
