@@ -1,17 +1,35 @@
-import React from 'react';
+import React, {useState} from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import './DateInput.css';
-import Input from '../Input/Input';
-import Label from '../Label/Label';
-import {useState} from 'react';
 
-function DateInput(props) {
+const DateInput = () => {
+    const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndDate] = useState(null);
+    const onChange = (dates) => {
+        const [start, end] = dates;
+        setStartDate(start);
+        setEndDate(end);
+    };
 
     return (
         <div className="check-in">
-            <Input callback={props.setData} className="check-in_input" type="text" id="check-in-input" name="check-in-input" required="required" value={props.data}/>
-            <Label className="check-in_label" htmlFor="check-in-input" text="Check-in — Check-out"></Label>
+            <DatePicker
+                name="datepicker"
+                Label="Check-in — Check-out"
+                className="form_checkIn"
+                selected={startDate}
+                minDate={new Date()}
+                onChange={onChange}
+                startDate={startDate}
+                endDate={endDate}
+                selectsRange
+                monthsShown={2}
+                dateFormat='MMM dd, yyyy (E)'
+                placeholderText='Check-in — Check-out'
+            />
         </div>
     );
-}
+};
 
 export default DateInput;

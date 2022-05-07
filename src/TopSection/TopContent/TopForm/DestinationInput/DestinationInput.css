@@ -1,6 +1,6 @@
 .destination {
     position: relative;
-    width: 38%;
+    width: 30%;
     border-radius: 8px;
     max-height: 64px;
 }
@@ -13,8 +13,10 @@
     font-size: 18px;
     color: #383838;
     outline: none;
+    cursor: pointer;
 }
 
+.destination_input:hover,
 .destination_input:focus {
     border: 3px solid #F5BD41;
 }

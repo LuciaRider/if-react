@@ -1,10 +1,10 @@
 .check-in {
     position: relative;
-    width: 21%;
+    width: 39%;
     border-radius: 8px;
 }
 
-.check-in_input {
+.form_checkIn {
     height: 64px;
     width: 100%;
     border-radius: 8px;
@@ -12,16 +12,10 @@
     font-size: 18px;
     color: #383838;
     outline: none;
+    cursor: pointer;
 }
 
-.check-in_input:focus {
+.form_checkIn:hover,
+.form_checkIn:focus {
     border: 3px solid #F5BD41;
-}
-
-.check-in_label {
-    position: absolute;
-    bottom: 88px;
-    left: 5%;
-    font-size: 18px;
-    color: #FFFFFF;
 }

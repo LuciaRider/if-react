@@ -10,7 +10,7 @@ function DestinationInput(props) {
 
     return (
         <div className="destination">
-            <Input onChange={handleChange} value={name} className="destination_input" type="text" id="destination-input" name="search" required="required"/>
+            <input onChange={handleChange} value={name} className="destination_input" type="text" id="destination-input" name="search" required="required" placeholder='New York'/>
             <Label className="destination_label" htmlFor="destination-input" text="Your destination or hotel name"></Label>
         </div>
     );

@@ -1,60 +1,68 @@
-import React from 'react';
+import React, { useState } from "react";
 import './PeopleInput.css';
+import ChildAgeSelect from './ChildAgeSelect/ChildAgeSelect';
+import Counter from './Counter/Counter';
+import FormFilters from './FormFilters/FormFilters';
 
-function PeopleInput() {
+function FormFiltersWindow () {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        setIsOpen(!isOpen)
+    }
 
     return (
-        <div className="children">
-            <div className="children_wrapper">
-                <div className="input_adults">
-                    <span id="input_adults_count">1</span>
-                    <span>Adults</span>
-                </div>
-                <span className="dash"></span>
-                <div className="input_children">
-                    <span id="input_children_count">0</span>
-                    <span>Children</span>
-                </div>
-                <span className="dash"></span>
-                <div className="input_rooms">
-                    <span id="input_rooms_count">1</span>
-                    <span>Rooms</span>
-                </div>
-                <div className="filter_wrapper">
-                <div className="filter_content">
-                    <div className="filter_adults">
-                        <p className="filter_text">Adults</p>
-                        <div className="filter_plus-minus">
-                            <p className="minus">-</p>
-                            <p className="filter_number">1</p>
-                            <p className="plus">+</p>
-                        </div>
-                    </div>
-                    <div className="filter_children">
-                        <p className="filter_text">Children</p>
-                        <div className="filter_plus-minus">
-                            <p className="minus">-</p>
-                            <p className="filter_number">0</p>
-                            <p className="plus">+</p>
-                        </div>
-                    </div>
-                    <div className="filter_rooms">
-                        <p className="filter_text">Rooms</p>
-                        <div className="filter_plus-minus">
-                            <p className="minus">-</p>
-                            <p className="filter_number">1</p>
-                            <p className="plus">+</p>
-                        </div>
-                    </div>
-                    <div className="child_age_moreOne">
-                        <p className="child_age">What is the age of the child you’re travelling with?</p>
-                        <div className="child_age_selects"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    );
+        {
+            isOpen,
+            handleClick,
+        }
+    )
 }
+
+function PeopleInput () {
+
+    const {data, countOfSelect} = FormFilters();
+    const {isOpen, handleClick} = FormFiltersWindow();
+
+    return (
+        <>
+            <div className="people_wrapper">
+                <div onClick={handleClick}>
+                    {
+                        `${data.adults.count} Adults
+                        —
+                        ${data.children.count} Children
+                        —
+                        ${data.rooms.count} Rooms`
+                    }
+                </div>
+                {
+                    isOpen && (
+                        <div className="filterWrapper">
+                            <div>
+                                {
+                                    Object.keys(data).map(key => <Counter {...data[key]} />)
+                                }
+                            </div>
+                            <div className="childAgeQuestion">
+                                {
+                                    data.children.count > 0 &&
+                                    <span className="childAgeQuestion">
+                                        What is the age of the child you’re<br/> travelling with?
+                                    </span>
+                                }
+                            </div>
+                            <div className='ageSelect'>
+                                {
+                                    countOfSelect.map((item, i) => (<ChildAgeSelect/>))
+                                }
+                            </div>
+                        </div>
+                    )
+                }
+            </div>
+        </>
+    );
+};
 
 export default PeopleInput;
