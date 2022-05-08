@@ -47,7 +47,7 @@ function PeopleInput () {
 
                             <div className='ageSelect'>
                                 {
-                                    countOfSelect.map((element, i) => (<ChildAgeSelect/>))
+                                    countOfSelect.map((element, index) => (<ChildAgeSelect/>))
                                 }
                             </div>
                         </div>
