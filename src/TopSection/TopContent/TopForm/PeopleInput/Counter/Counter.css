@@ -7,6 +7,10 @@
     font-size: 16px;
 }
 
+.counterWrapper:last-child {
+    margin-bottom: 0;
+}
+
 .counterChanger {
     display: flex;
     align-items: center;

@@ -4,8 +4,8 @@ import './ChildAgeSelect.css';
 const SelectAge = () => {
     const [value, setValue] = useState('');
 
-    const options = Array.from(Array(18).keys()).map((text, index) => {
-        return <option key={index}> {text} years old</option>;
+    const options = Array.from(Array(18).keys()).map((number, index) => {
+        return <option key={index}> {number} years old</option>;
     });
     
     return (

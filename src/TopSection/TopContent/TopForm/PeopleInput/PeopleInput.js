@@ -25,43 +25,35 @@ function PeopleInput () {
     const {isOpen, handleClick} = FormFiltersWindow();
 
     return (
-        <>
             <div className="people_wrapper">
                 <div onClick={handleClick}>
                     {
-                        `${data.adults.count} Adults
-                        —
-                        ${data.children.count} Children
-                        —
-                        ${data.rooms.count} Rooms`
+                        `${data.adults.count} Adults — ${data.children.count} Children — ${data.rooms.count} Rooms`
                     }
                 </div>
                 {
                     isOpen && (
                         <div className="filterWrapper">
-                            <div>
-                                {
-                                    Object.keys(data).map(key => <Counter {...data[key]} />)
-                                }
-                            </div>
-                            <div className="childAgeQuestion">
-                                {
-                                    data.children.count > 0 &&
-                                    <span className="childAgeQuestion">
-                                        What is the age of the child you’re<br/> travelling with?
-                                    </span>
-                                }
-                            </div>
+                            {
+                                Object.keys(data).map(key => <Counter {...data[key]} />)
+                            }
+                        
+                            {
+                                data.children.count > 0 &&
+                                <span className="childAgeQuestion">
+                                    What is the age of the child you’re travelling with?
+                                </span>
+                            }
+
                             <div className='ageSelect'>
                                 {
-                                    countOfSelect.map((item, i) => (<ChildAgeSelect/>))
+                                    countOfSelect.map((element, i) => (<ChildAgeSelect/>))
                                 }
                             </div>
                         </div>
                     )
                 }
             </div>
-        </>
     );
 };
 
