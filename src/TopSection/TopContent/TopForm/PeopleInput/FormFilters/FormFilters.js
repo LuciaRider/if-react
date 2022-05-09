@@ -2,10 +2,12 @@ import { useState } from 'react';
 import './FormFilters.css';
 
 function FormFilters () {
+
     const [countOfAdults, setCountOfAdults] = useState(1);
     const [countOfChildren, setCountOfChildren] = useState([]);
     const [countOfRooms, setCountOfRooms] = useState(1);
     const [countOfSelect, setCountOfSelect] = useState([]);
+    
     const data = {
         adults: {
             minValue: 1,
@@ -30,7 +32,7 @@ function FormFilters () {
                 event.preventDefault();
                 data.children.count < data.children.maxValue && setCountOfChildren(prevState => [...prevState, 1])
                 const addComponent = () => {
-                    setCountOfSelect([...countOfSelect, "Select Component"])
+                    setCountOfSelect([...countOfSelect, ""])
                 }
                 data.children.count < data.children.maxValue && addComponent()
             },

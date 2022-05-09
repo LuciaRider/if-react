@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ChildAgeSelect.css';
 
-const SelectAge = () => {
+function SelectAge () {
     const [value, setValue] = useState('');
 
     const options = Array.from(Array(18).keys()).map((number, index) => {
