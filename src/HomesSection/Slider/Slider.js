@@ -24,7 +24,7 @@ const Slider = () => {
         return (
         <SwiperSlide key={index}>
         <div className="content_img">
-          <div class="image_wrapper">
+          <div className="image_wrapper">
             <img src={element.imageUrl} alt={element.name}/>
           </div>
             <p className="accent-blue">{element.name}</p>

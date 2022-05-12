@@ -18,6 +18,16 @@
     align-items: center;
 }
 
+.account_icon {
+    height: 40px;
+    width: 40px;
+    fill: #FFFFFF;
+}
+
+._active_icon {
+    fill: #F5BD41;
+}
+
 @media only screen and (max-width: 1120px) {
 
     .header {

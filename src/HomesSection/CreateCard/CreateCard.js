@@ -63,10 +63,10 @@ const data = [
   function CreateCard(data) {
     return (
       
-        <div class="content_img">
+        <div className="content_img">
           <img src="{data.imageUrl}" alt="{data.name}"/>
-          <p class="accent-blue">{data.name}</p>
-          <p class="secondary">{data.city}, {data.country}</p>
+          <p className="accent-blue">{data.name}</p>
+          <p className="secondary">{data.city}, {data.country}</p>
         </div>
       
     )

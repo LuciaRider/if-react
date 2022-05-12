@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './TopForm.css';
 import DestinationInput from './DestinationInput/DestinationInput';
 import DateInput from './DateInput/DateInput';
@@ -9,7 +8,6 @@ const url = 'https://fe-student-api.herokuapp.com/api/hotels';
 
 const useForm = (setSearchValue) => {
 
-    const navigate = useNavigate();
     const [values, setValues] = useState({});
 
     const handleSubmit = async (e) => {
@@ -18,7 +16,6 @@ const useForm = (setSearchValue) => {
         const items = await res.json();
         console.log(items)
         setSearchValue(items);
-        navigate('/hotels');
     }
 
     const handleChange = (e) => {
@@ -26,7 +23,6 @@ const useForm = (setSearchValue) => {
             ...values,
             [e.target.name] : e.target.value,
         });
-        console.log(values)
     };
 
     return {

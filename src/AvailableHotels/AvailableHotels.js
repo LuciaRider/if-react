@@ -65,7 +65,7 @@ function AvailableHotels (props) {
                                     <SwiperSlide key={index}>
                                         <Link to={`/hotels/${hotelData.id}`} className="available_card">
                                                 <div className="content_img">
-                                                    <div class="image_wrapper">
+                                                    <div className="image_wrapper">
                                                         <img src={hotelData.imageUrl} alt={hotelData.name}/>
                                                     </div>
                                                     <p className="accent_blue">{hotelData.name}</p>
