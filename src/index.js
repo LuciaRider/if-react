@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../src/redux/store';
 import './index.css';
-import App from './Components/App/App';
+import AppWrapper from './Components/AppWrapper/AppWrapper.js';
 import HotelPage from '../../if-react/src/AvailableHotels/HotelPage/HotelPage';
 import LoginPage from '../../if-react/src/TopSection/LoginPage/LoginPage';
-import RequireAutharization from '../../if-react/src/TopSection/TopContent/RequireAutharization/RequireAutharization';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -19,12 +18,7 @@ import RequireAutharization from '../../if-react/src/TopSection/TopContent/Requi
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <Routes>
-          <Route path="/" element={<App/>}/>
-          <Route element={<RequireAutharization/>}/>
-          <Route path="login" element={<LoginPage/>}/>
-          <Route path='/hotels/:id' element={<HotelPage/>}/>
-      </Routes>
+      <AppWrapper/>
     </Provider>
   </BrowserRouter>,
   document.getElementById('root')

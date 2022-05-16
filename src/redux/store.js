@@ -1,9 +1,8 @@
 import { createStore } from 'redux';
-import { devToolsEnhancer } from 'redux-devtools-extension';
-import { userAuthReducer, initialUserData } from '../ducks/reducers.js';
+import { userAuthReducer, initialState } from '../ducks/reducers.js';
 
 export default createStore(
     userAuthReducer,
-    initialUserData,
-    devToolsEnhancer(),
+    initialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
