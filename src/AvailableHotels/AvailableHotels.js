@@ -38,9 +38,8 @@ const useFetch = (url) => {
   }
 };
 
-function AvailableHotels (props) {
+function AvailableHotels ({searchValue}) {
 
-  const searchValue = props.searchValue;
   const {data, loading} = useFetch(`${url}?search=${searchValue}`);
 
   return  loading ? (<p>Loading...</p>) :

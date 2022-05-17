@@ -1,9 +1,9 @@
 import React from 'react';
 import './SectionTitle.css';
 
-function SectionTitle(props) {
+function SectionTitle({text}) {
     return (
-        <h2>{props.text}</h2>
+        <h2>{text}</h2>
     )
 }
 

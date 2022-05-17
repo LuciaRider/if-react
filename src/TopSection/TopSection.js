@@ -3,9 +3,7 @@ import './TopSection.css';
 import TopHeader from './TopHeader/TopHeader';
 import TopContent from './TopContent/TopContent';
 
-function TopSection(props)  {
-
-    const setSearchValue = props.setSearchValue;
+function TopSection({setSearchValue})  {
 
     return (
         <header>

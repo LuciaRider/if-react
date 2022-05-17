@@ -1,12 +1,12 @@
 import React from 'react';
 import './HeaderIcon.css';
 
-function HeaderIcon(props) {
+function HeaderIcon({handleClick, className, viewBox, path}) {
 
     return (
-        <svg onClick={props.handleClick} className={props.className} viewBox={props.viewBox}>
+        <svg onClick={handleClick} className={className} viewBox={viewBox}>
             <g>
-                <path d={props.path}/>
+                <path d={path}/>
             </g>
         </svg>
     )

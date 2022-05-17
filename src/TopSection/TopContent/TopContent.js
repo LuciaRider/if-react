@@ -3,9 +3,7 @@ import TopTitle from './TopTitle/TopTitle';
 import TopForm from './TopForm/TopForm';
 import TopContentIcons from './TopContentIcons/TopContentIcons';
 
-function TopContent(props) {
-
-    const setSearchValue = props.setSearchValue;
+function TopContent({setSearchValue}) {
 
     return (
         <div>

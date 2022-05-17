@@ -24,6 +24,10 @@ footer {
     text-decoration: none;
 }
 
+.footer_content p {
+    padding-left: 0;
+}
+
 .footer_support {
     width: 33.33%;
 }

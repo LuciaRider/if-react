@@ -5,8 +5,6 @@ import { Provider } from 'react-redux';
 import store from '../src/redux/store';
 import './index.css';
 import AppWrapper from './Components/AppWrapper/AppWrapper.js';
-import HotelPage from '../../if-react/src/AvailableHotels/HotelPage/HotelPage';
-import LoginPage from '../../if-react/src/TopSection/LoginPage/LoginPage';
 
 ReactDOM.render(
   <BrowserRouter>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function SignOutIcon(props) {
+function SignOutIcon({className, viewBox, path}) {
 
   return (
-    <svg className={props.className} viewBox={props.viewBox}>
+    <svg className={className} viewBox={viewBox}>
       <g>
-          <path d={props.path}/>
+          <path d={path}/>
       </g>
     </svg>
   );
