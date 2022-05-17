@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import './AvailableHotels.css';
@@ -44,11 +43,6 @@ function AvailableHotels (props) {
   const searchValue = props.searchValue;
   const {data, loading} = useFetch(`${url}?search=${searchValue}`);
 
-  const navigate = useNavigate();
-  const handleClick = () => {
-      navigate('/');
-  }
-
   return  loading ? (<p>Loading...</p>) :
 
   (
@@ -76,7 +70,6 @@ function AvailableHotels (props) {
                       ) :             
                         <div>
                             <p className="hotel-no-found">The hotel was not found</p>
-                            <button onClick={handleClick} className="btn_available">Back</button>
                         </div>
                     }
                     </Swiper>
