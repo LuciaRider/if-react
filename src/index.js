@@ -8,13 +8,6 @@ import AppWrapper from './Components/AppWrapper/AppWrapper.js';
 import HotelPage from '../../if-react/src/AvailableHotels/HotelPage/HotelPage';
 import LoginPage from '../../if-react/src/TopSection/LoginPage/LoginPage';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>

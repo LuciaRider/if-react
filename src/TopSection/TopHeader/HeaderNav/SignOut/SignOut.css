@@ -2,8 +2,8 @@
     width: 192px;
     height: 50px;
     position: absolute;
-    bottom: -60px;
-    right: 0;
+    right: 105px;
+    top: 100px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: start;
@@ -11,9 +11,8 @@
     padding: 16px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
     border: 1px solid #CECECE;
-    border-radius: 8px;
+    cursor: pointer;
 }
 
 .sign_out_icon{
@@ -23,4 +22,5 @@
 
 p {
     padding-left: 16px;
+    color: #333333;
 }

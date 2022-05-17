@@ -13,7 +13,6 @@ function TopHeader() {
     const [dropDown, setDropDown] = useState(false);
     const handleClick = () => {
       setDropDown(!dropDown);
-      console.log(dropDown)
     };
 
     return (
