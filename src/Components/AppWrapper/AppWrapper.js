@@ -8,8 +8,6 @@ import LoginPage from '../../TopSection/LoginPage/LoginPage';
 
 function AppWrapper() {
 
-  const userData = useSelector(userAuthSelector);
-
   return (
       <>
         <Routes>
@@ -17,7 +15,6 @@ function AppWrapper() {
             <Route path="/login" element={<LoginPage/>}/>
             <Route path='/hotels/:id' element={<HotelPage/>}/>
         </Routes>
-        <Navigate to={userData ? '/' : '/login'} />
     </>
   )
 };

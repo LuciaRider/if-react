@@ -31,7 +31,7 @@ const useFetch = (url) => {
 
       getData();
 
-  }, []);
+  }, [url]);
 
   return {
       data,
