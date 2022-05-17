@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopContentIcons.css';
-import GooglePlayBadge from '../../../img/google-play-badge.png';
-import AppStoreBadge from '../../../img/app-store-badge.png';
+import GooglePlayBadge from '../../../../img/google-play-badge.png';
+import AppStoreBadge from '../../../../img/app-store-badge.png';
 
 function TopContentIcons() {
     

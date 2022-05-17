@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import userAuthSelector from '../../ducks/selectors.js';
-import SignOut from '../TopHeader/HeaderNav/SignOut/SignOut.js';
+import userAuthSelector from '../../../ducks/selectors.js';
+import SignOut from './HeaderNav/SignOut/SignOut.js';
 import './TopHeader.css';
 
 import HeaderTextMenu from './HeaderNav/HeaderTextMenu/HeaderTextMenu';

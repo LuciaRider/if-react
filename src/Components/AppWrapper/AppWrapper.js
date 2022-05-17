@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import HotelPage from '../../AvailableHotels/HotelPage/HotelPage.js';
+import HotelPage from '../../components/AvailableHotels/HotelPage/HotelPage.js';
 import App from '../App/App.js';
-import LoginPage from '../../TopSection/LoginPage/LoginPage';
+import LoginPage from '../../components/TopSection/LoginPage/LoginPage.js';
 
 function AppWrapper() {
 

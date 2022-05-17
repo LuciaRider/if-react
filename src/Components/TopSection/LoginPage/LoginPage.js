@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { ACTION_USER_AUTH } from '../../ducks/actions.js';
-import userAuthSelector from '../../ducks/selectors.js';
-import TopHeader from '../TopHeader/TopHeader';
-import Button from '../../Components/Button/Button';
+import { ACTION_USER_AUTH } from '../../../ducks/actions.js';
+import userAuthSelector from '../../../ducks/selectors.js';
+import TopHeader from '../../../components/TopSection/TopHeader/TopHeader.js';
+import Button from '../../../components/Button/Button.js';
 import './LoginPage.css';
 
 function LoginPage() {

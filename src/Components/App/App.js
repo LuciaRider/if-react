@@ -3,11 +3,11 @@ import userAuthSelector from '../../ducks/selectors.js';
 import { useSelector } from 'react-redux';
 import React, {useState} from 'react';
 import './App.css';
-import AvailableHotels from '../../AvailableHotels/AvailableHotels';
-import HomesSection from '../../HomesSection/HomesSection';
-import Footer from '../../Components/Footer/Footer.js';
-import TopSection from '../../TopSection/TopSection';
-import WhatDoWeOffer from '../WhatDoWeOffer/WhatDoWeOffer.js';
+import AvailableHotels from '../../components/AvailableHotels/AvailableHotels.js';
+import HomesSection from '../../components/HomesSection/HomesSection.js';
+import Footer from '../../components/Footer/Footer.js';
+import TopSection from '../../components/TopSection/TopSection.js';
+import WhatDoWeOffer from '../../components/WhatDoWeOffer/WhatDoWeOffer.js';
 
 function App() {
 

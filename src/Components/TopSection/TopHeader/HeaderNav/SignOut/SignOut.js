@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { ACTION_USER_AUTH } from '../../../../ducks/actions.js';
+import { ACTION_USER_AUTH } from '../../../../../ducks/actions.js';
 import './SignOut.css';
-import SignOutIcon from '../SignOutIcon/SignOutIcon.js';
+import SignOutIcon from '../SignOutIcon/SignOutIcon.js.js';
 
 function SignOut() {
 

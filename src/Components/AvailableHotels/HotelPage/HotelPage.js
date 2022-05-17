@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './HotelPage.css';
-import Footer from '../../Components/Footer/Footer.js';
+import Footer from '../../Footer/Footer.js';
 import HeaderTextMenu from '../../TopSection/TopHeader/HeaderNav/HeaderTextMenu/HeaderTextMenu';
 import HeaderIcon from '../../TopSection/TopHeader/HeaderNav/HeaderIcon/HeaderIcon';
 

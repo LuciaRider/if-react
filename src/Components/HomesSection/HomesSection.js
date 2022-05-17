@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomesSection.css';
-import SectionTitle from '../Components/SectionTitle/SectionTitle';
+import SectionTitle from '../../components/SectionTitle/SectionTitle.js';
 import Slider from './Slider/Slider';
 
 const data = [
