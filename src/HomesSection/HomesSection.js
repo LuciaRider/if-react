@@ -1,6 +1,6 @@
-import React from "react";
-import "./HomesSection.css";
-import SectionTitle from "../Components/SectionTitle/SectionTitle";
+import React from 'react';
+import './HomesSection.css';
+import SectionTitle from '../Components/SectionTitle/SectionTitle';
 import Slider from './Slider/Slider';
 
 const data = [
@@ -75,6 +75,6 @@ const data = [
         </div>
         </section>
     );
-  }
+  };
   
   export default HomesSection;

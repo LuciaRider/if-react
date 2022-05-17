@@ -14,7 +14,7 @@ function AppWrapper() {
             <Route path='/hotels/:id' element={<HotelPage/>}/>
         </Routes>
     </>
-  )
+  );
 };
 
 export default AppWrapper;

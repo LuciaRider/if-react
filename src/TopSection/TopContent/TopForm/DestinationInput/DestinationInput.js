@@ -9,7 +9,6 @@ function DestinationInput({handleChange, name}) {
             <label className="destination_label" htmlFor="destination-input">Your destination or hotel name</label>
         </div>
     );
-}
-
+};
 
 export default DestinationInput;

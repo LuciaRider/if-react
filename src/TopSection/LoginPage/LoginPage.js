@@ -16,22 +16,22 @@ function LoginPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const [loginValues, setLoginValues] = useState({
-    email: "user@mail.ru",
-    password: "password",
-  })
+    email: 'user@mail.ru',
+    password: 'password',
+  });
 
   const handleChange = (e) => {
     setLoginValues((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   const userAuth = (e) => {
     e.preventDefault();
     dispatch(ACTION_USER_AUTH(loginValues));
     navigate('/');
-  }
+  };
 
   return (
     <header>
@@ -58,6 +58,6 @@ function LoginPage() {
       </div>
     </header>
   );
-}
+};
 
 export default LoginPage;

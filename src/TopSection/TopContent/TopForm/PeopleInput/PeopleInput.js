@@ -9,15 +9,15 @@ function FormFiltersWindow () {
 
     const handleClick = () => {
         setIsOpen(!isOpen)
-    }
+    };
 
     return (
         {
             isOpen,
             handleClick,
         }
-    )
-}
+    );
+};
 
 function PeopleInput () {
 
@@ -25,35 +25,35 @@ function PeopleInput () {
     const {isOpen, handleClick} = FormFiltersWindow();
 
     return (
-            <div className="people_wrapper">
-                <div onClick={handleClick}>
-                    {
-                        `${data.adults.count} Adults — ${data.children.count} Children — ${data.rooms.count} Rooms`
-                    }
-                </div>
+        <div className="people_wrapper">
+            <div onClick={handleClick}>
                 {
-                    isOpen && (
-                        <div className="filterWrapper">
-                            {
-                                Object.keys(data).map(key => <Counter {...data[key]} />)
-                            }
-                        
-                            {
-                                data.children.count > 0 &&
-                                <span className="childAgeQuestion">
-                                    What is the age of the child you’re travelling with?
-                                </span>
-                            }
-
-                            <div className='ageSelect'>
-                                {
-                                    countOfSelect.map((element, index) => (<ChildAgeSelect/>))
-                                }
-                            </div>
-                        </div>
-                    )
+                    `${data.adults.count} Adults — ${data.children.count} Children — ${data.rooms.count} Rooms`
                 }
             </div>
+            {
+                isOpen && (
+                    <div className="filterWrapper">
+                        {
+                            Object.keys(data).map(key => <Counter {...data[key]} />)
+                        }
+                    
+                        {
+                            data.children.count > 0 &&
+                            <span className="childAgeQuestion">
+                                What is the age of the child you’re travelling with?
+                            </span>
+                        }
+
+                        <div className='ageSelect'>
+                            {
+                                countOfSelect.map((element, index) => (<ChildAgeSelect/>))
+                            }
+                        </div>
+                    </div>
+                )
+            }
+        </div>
     );
 };
 

@@ -60,7 +60,7 @@ function FormFilters () {
                 data.rooms.count !== data.rooms.minValue && setCountOfRooms(prevCount => prevCount - 1)
             },
         },
-    }
+    };
     return (
         {
             data,
@@ -69,7 +69,7 @@ function FormFilters () {
             countOfRooms,
             countOfSelect,
         }
-    )
-}
+    );
+};
 
 export default FormFilters;

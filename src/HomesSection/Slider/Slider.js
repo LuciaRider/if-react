@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './Slider.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -12,7 +12,7 @@ const Slider = () => {
     .then(response => response.json())
     .then(data => setData(data))
     .catch(error => console.log(error))
-  }, [])
+  }, []);
 
   return (
     <Swiper
@@ -30,9 +30,9 @@ const Slider = () => {
             <p className="secondary">{element.city}, {element.country}</p>
         </div>
       </SwiperSlide>)
-      })}
+      })};
     </Swiper>
-  )
-}
+  );
+};
 
 export default Slider;

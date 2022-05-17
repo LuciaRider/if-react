@@ -10,7 +10,7 @@ function TopTitle()  {
                 to live, work or just relax
             </h1>
         </div>
-    )
-}
+    );
+};
 
 export default TopTitle;

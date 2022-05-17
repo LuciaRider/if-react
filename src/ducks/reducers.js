@@ -12,5 +12,5 @@ export const userAuthReducer = (state = initialState, action) => {
       };
     default:
       return state;
-  }
+  };
 };

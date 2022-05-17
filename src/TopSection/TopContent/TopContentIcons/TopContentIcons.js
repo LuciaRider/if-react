@@ -4,6 +4,7 @@ import GooglePlayBadge from '../../../img/google-play-badge.png';
 import AppStoreBadge from '../../../img/app-store-badge.png';
 
 function TopContentIcons() {
+    
     return ( 
         <div className="top-section_bottom-icons">
             <a href="https://play.google.com/store" target="_blank">
@@ -13,7 +14,7 @@ function TopContentIcons() {
                 <img src={AppStoreBadge} className="app-store" alt="Google-play"/>
             </a>
         </div>
-    )
-}
+    );
+};
 
 export default TopContentIcons;

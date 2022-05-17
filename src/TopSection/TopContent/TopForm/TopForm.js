@@ -16,7 +16,7 @@ const useForm = (setSearchValue) => {
         const items = await res.json();
         console.log(items)
         setSearchValue(items);
-    }
+    };
 
     const handleChange = (e) => {
         setValues({
@@ -30,7 +30,7 @@ const useForm = (setSearchValue) => {
         handleSubmit,
         handleChange,
     };
-}
+};
 
 const TopForm = ({ setSearchValue }) => {
 
@@ -43,16 +43,16 @@ const TopForm = ({ setSearchValue }) => {
 
     const name = values.name;
 
-        return (
-            <div className="form_wrap">
-                <form onSubmit={handleSubmit} action="" className="top-section_form">
-                    <DestinationInput handleChange={handleChange} value={name}/>
-                    <DateInput/>
-                    <PeopleInput/>
-                    <button className="form_button">Search</button>
-                </form>
-            </div>
-        );
-}
+    return (
+        <div className="form_wrap">
+            <form onSubmit={handleSubmit} action="" className="top-section_form">
+                <DestinationInput handleChange={handleChange} value={name}/>
+                <DateInput/>
+                <PeopleInput/>
+                <button className="form_button">Search</button>
+            </form>
+        </div>
+    );
+};
 
 export default TopForm;

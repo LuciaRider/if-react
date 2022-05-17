@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.css';
 
-
 function Footer() {
 
     return (
@@ -54,8 +53,7 @@ function Footer() {
                 <p className="footer_rights">© 2020 Triphouse, Inc. All rights reserved</p>
             </div>
         </footer>
-
     );
-}
+};
 
 export default Footer;

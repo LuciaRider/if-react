@@ -12,6 +12,6 @@ function TopContent({setSearchValue}) {
             <TopContentIcons/>
         </div>
     );
-}
+};
 
 export default TopContent;

@@ -12,7 +12,7 @@ function TopSection({setSearchValue})  {
                 <TopContent setSearchValue={setSearchValue}/>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default TopSection;

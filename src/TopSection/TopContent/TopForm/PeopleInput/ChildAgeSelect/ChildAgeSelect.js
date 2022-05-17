@@ -14,16 +14,16 @@ function SelectAge () {
             value,
             setValue,
         }
-    )
-}
+    );
+};
 
 function ChildAgeSelect () {
     const {options, value, setValue} = SelectAge();
     return (
-            <select className='age_select' value={value} onChange={(e) => setValue(e.target.value)}>
-                {options}
-            </select>
-    )
-}
+        <select className='age_select' value={value} onChange={(e) => setValue(e.target.value)}>
+            {options}
+        </select>
+    );
+};
 
 export default ChildAgeSelect;

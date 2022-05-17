@@ -20,7 +20,7 @@ function Counter ( { label, count, onIncrement, onDecrement, minValue, maxValue 
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Counter;
