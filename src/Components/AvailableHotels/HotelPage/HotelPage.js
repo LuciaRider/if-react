@@ -84,7 +84,6 @@ function HotelPage()  {
                     <div className="hotel_card">
                         <img className="hotel_img" src={data.imageUrl} alt={data.name}/>
                         <p className="hotelCard_name">{data.name}</p>
-                        <p className="hotelCard_location">{data.city}, {data.country}</p>
                     </div>
                     <div className="btn_homepage">
                         <button onClick={handleClick} className="btn_available">Back to the home page</button>
