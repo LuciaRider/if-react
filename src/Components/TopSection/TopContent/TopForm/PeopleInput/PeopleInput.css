@@ -1,0 +1,41 @@
+.people_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 64px;
+    border-radius: 8px;
+    padding: 21px 0px;
+    font-size: 18px;
+    color: #383838;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.people_wrapper:hover,
+.people_wrapper:focus {
+    border: 3px solid #F5BD41;
+}
+
+.filterWrapper {
+    position: absolute;
+    top: 76px;
+    background: #FFFFFF;
+    padding: 22px;
+    border-radius: 8px;
+    width: 259px;
+    box-shadow: 0 0 4px grey;
+}
+
+.labelChildren {
+    margin: 28px 0 12px;
+}
+
+.childAgeQuestion {
+    margin-top: 28px;
+    font-size: 12px;
+}
+
+.ageSelect {
+    display: block;
+}

@@ -1,0 +1,26 @@
+.sign_out{
+    width: 192px;
+    height: 50px;
+    position: absolute;
+    right: 105px;
+    top: 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    border: 1px solid #CECECE;
+    cursor: pointer;
+}
+
+.sign_out_icon{
+    width: 20px;
+    height: 18px;
+}
+
+p {
+    padding-left: 16px;
+    color: #333333;
+}

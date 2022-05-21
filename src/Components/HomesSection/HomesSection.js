@@ -1,5 +1,11 @@
+<<<<<<< HEAD:src/HomesSection/HomesSection.js
 import React from "react";
 import "./HomesSection.css";
+=======
+import React from 'react';
+import './HomesSection.css';
+import SectionTitle from '../../components/SectionTitle/SectionTitle.js';
+>>>>>>> lesson-40:src/Components/HomesSection/HomesSection.js
 import Slider from './Slider/Slider';
 
 const data = [
@@ -74,6 +80,6 @@ const data = [
         </div>
         </section>
     );
-  }
+  };
   
   export default HomesSection;

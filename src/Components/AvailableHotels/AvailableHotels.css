@@ -1,0 +1,41 @@
+.availavle_title {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.available_content {
+    margin-top: 105px;
+}
+
+.accent_blue {
+    color: #3077C6;
+    margin: 25px 0;
+    max-width: 296px;
+}
+
+.secondary {
+    color: #BFBFBF;
+    max-width: 296px;
+}
+
+.hotel-no-found {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn_available {
+    height: 64px;
+    width: 15%;
+    border-radius: 8px;
+    background-color: #3077C6;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.available_card {
+    text-decoration: none;
+}

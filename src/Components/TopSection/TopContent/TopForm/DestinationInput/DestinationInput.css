@@ -1,0 +1,31 @@
+.destination {
+    position: relative;
+    width: 30%;
+    border-radius: 8px;
+    max-height: 64px;
+}
+
+.destination_input {
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 24px;
+    font-size: 18px;
+    color: #383838;
+    outline: none;
+    cursor: pointer;
+}
+
+.destination_input:hover,
+.destination_input:focus {
+    border: 3px solid #F5BD41;
+}
+
+.destination_label {
+    position: absolute;
+    bottom: 88px;
+    left: 5%;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+

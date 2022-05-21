@@ -1,0 +1,37 @@
+.nav_text_menu {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav_text_menu::before {
+    position: absolute;
+    content: '';
+    left: 6%;
+    bottom: -30%;
+    width: 60%;
+    height: 4px;
+    background-color: #F5BD41;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.nav_text_menu:hover::before {
+    opacity: 1;
+}
+
+.nav_text_menu:active::before {
+    position: absolute;
+    content: '';
+    left: 6%;
+    bottom: -30%;
+    width: 60%;
+    height: 4px;
+    background-color: #F5BD41;
+    opacity: 1;
+    transition: none;
+}
+
+a {
+    padding-right: 24px;
+}
