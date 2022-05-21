@@ -1,11 +1,6 @@
-<<<<<<< HEAD:src/HomesSection/HomesSection.js
-import React from "react";
-import "./HomesSection.css";
-=======
 import React from 'react';
 import './HomesSection.css';
 import SectionTitle from '../../components/SectionTitle/SectionTitle.js';
->>>>>>> lesson-40:src/Components/HomesSection/HomesSection.js
 import Slider from './Slider/Slider';
 
 const data = [
@@ -72,7 +67,7 @@ const data = [
         <section className="homes">
         <div className="homes_container">
             <div className="homes_title">
-                <h2>Homes guests loves</h2>
+                <SectionTitle text='Homes guests loves'/>
             </div>
             <div className="homes_content">
               <Slider data={data}/>
